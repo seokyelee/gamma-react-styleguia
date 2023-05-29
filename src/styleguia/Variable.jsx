@@ -16,7 +16,7 @@ export default function Variable() {
 		<>
 		
 		<h2 className="sub_title" onClick={changeClass}>Paleta de colores</h2>
-			<section className={'color__container'+ classText}>
+			<section className={'color__boxcontainer'+ classText}>
 			<div className="color__box">
 				<ul>
 					<li className = "p">color parrafo:#777777</li>
