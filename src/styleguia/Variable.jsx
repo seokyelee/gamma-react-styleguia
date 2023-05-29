@@ -12,11 +12,21 @@ export default function Variable() {
 		}
 	}
 
+	let [classColorText, setClassColorText] = useState('');
+	
+	function changeClass(){
+		if (classColorText === 'active') {
+			setClassColorText('');
+		}else{
+			setClassColorText('active');
+		}
+	}
+
 	return (
 		<>
 		
 		<h2 className="sub_title" onClick={changeClass}>Paleta de colores</h2>
-			<section className={'color__boxcontainer'+ classText}>
+			<section className={'color__container'+ classColorText}>
 			<div className="color__box">
 				<ul>
 					<li className = "p">color parrafo:#777777</li>
